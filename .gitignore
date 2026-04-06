@@ -1,0 +1,32 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+ENV/
+build/
+dist/
+*.egg-info/
+
+# --- Java / J2ME  ---
+*.class
+*.jar
+*.war
+*.ear
+
+# --- Специфічні бінарники (RScript) ---
+*.dat
+*.bin
+*.rscript_compiled 
+
+# --- Системні файли ---
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- Налаштування IDE (VS Code / PyCharm) ---
+.vscode/
+.idea/
+*.swp
+*.swo
