@@ -1,6 +1,7 @@
 import os, sys
 from loguru import logger
 from pathlib import Path
+from loggerFunctions import *
 
 class Compiler:
 	def __init__(self):
@@ -50,14 +51,7 @@ class Compiler:
 
 
 
-def inform(message):
-    logger.opt(raw=True, colors=True).info(f"<light-blue>[INFO] {message}</light-blue>\n")
 
-def inform_error(message):
-    logger.opt(raw=True, colors=True).info(f"<light-red>[ERROR] {message}</light-red>\n")
-
-def inform_file(message):
-    logger.opt(raw=True, colors=True).info(f"<fg 117>[FILE]===> {message}</fg 117>\n")
 
 if __name__ == "__main__":
 	print("\n")
