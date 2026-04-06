@@ -5,10 +5,14 @@ from pathlib import Path
 import json
 import shutil
 
+
+
+
 class InitProject:
 	def __init__(self):
 		self.config = None
 		self.CONFIG_PATH = Path("prefs/config.json")
+
 
 
 	def CheckArgsConditions(self):
@@ -43,6 +47,9 @@ class InitProject:
 						inform_error(f"Помилка створення директорії {path_tools}")
 						inform_error(e)
 						exit()
+
+				#тут вже є директорія з проектом
+
 
 
 	def LoadConfig(self):
